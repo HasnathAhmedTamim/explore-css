@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        
+      }
+      ul li {
+        
+        list-style: none;
+        margin: 10px 25px;
+        padding: 5px;
+        border: 1px solid none;
+        color: antiquewhite;
+        border-radius: 5px;
+        background-color: blueviolet;
+      }
+      header {
+        display: grid;
+        background-color: darkblue;
+        color: blue;
+        justify-content: center;
+      }
+      a{
+        text-decoration: none;
+        
+      }
+
+      @media screen and (max-width:800px) {
+        ul {
+         
+          display:inline-block;
+          
+         
+          
+        }
+        header{
+          display: grid;
+           background-color: red;
+          color: blanchedalmond;
+        }
+      }
+        
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href=""><li>Home</li>
+          <a href=""><li>About</li></a>
+          <a href=""><li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maiores
+      aliquam libero voluptates perferendis quos cumque! Est earum eius,
+      reiciendis animi libero in totam adipisci ipsum non dolorem recusandae
+      molestias.
+    </div>
+  </body>
+</html>

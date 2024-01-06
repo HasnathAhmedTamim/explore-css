@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #head {
+        background-color: brown;
+        color: aliceblue;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;
+        grid-gap: 5px;
+        box-sizing: border-box;
+        height: 200px;
+        width: 100%;
+        background-color: #8cffa0;
+        padding: 10px;
+      }
+
+      #container > div {
+        background-color: #8ca0ff;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <h2 id="head" class="">hello man what's up!</h2>
+      <div id="container">
+        <div>Item as wide as the content, but at most 300 pixels.</div>
+        <div>Item with flexible width but a minimum of 200 pixels.</div>
+        <div>Inflexible item of 150 pixels width.</div>
+      </div>
+    </div>
+  </body>
+</html>

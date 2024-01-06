@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      ul {
+        padding: 30px;
+      }
+      li {
+        list-style: none;
+        display: inline;
+        color: whitesmoke;
+
+        padding: 0 20px;
+      }
+      header {
+        background-color: rgba(0, 0, 0, 0.702);
+        height: 100px;
+        position: sticky;
+        top: 0;
+        font-size: 2em;
+        flex-wrap: wrap;
+      }
+      .left {
+        background-color: greenyellow;
+        height: 50vh;
+        width: 30vw;
+        /* float: left; */
+      }
+      .right {
+        background-color: brown;
+        height: 50vh;
+        width: 30vw;
+        /* float: right; */
+      }
+      .center {
+        background-color: darkkhaki;
+        height: 50vh;
+        width: 30vw;
+        /* float: right; */
+      }
+      .block_container {
+        display: flex;
+        background-color: aquamarine;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+        flex-wrap: wrap;
+        font-size: 2em;
+        gap: 15px;
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .background {
+        background-image: url("/assets/test-img-1.avif");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 140vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="">
+      <div class="nav-container">
+        <ul>
+          <li>
+            <img
+              src="/assets/test-img-1.avif"
+              alt="pic"
+              width="40"
+              style="border-radius: 25px"
+            />
+          </li>
+        </ul>
+        <ul class="">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <!-- <ul>
+          <li><img src="/assets/test-img-1.avif" alt="" width="50" /></li>
+        </ul> -->
+      </div>
+    </header>
+    <section>
+      <div class="background"></div>
+    </section>
+    <section class="block_container">
+      <div class="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+        accusantium explicabo error perferendis? Non modi, ducimus ipsa,
+        voluptatem, omnis maxime consequatur quas ratione est iusto dolores
+        deleniti magnam tenetur minus!
+      </div>
+      <div class="center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed minima
+        neque beatae reprehenderit dolorum! Similique sequi quisquam obcaecati
+        doloremque quod. Molestiae nam porro libero dolore voluptas odit sunt
+        quas eos!
+      </div>
+      <div class="right">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed minima
+        neque beatae reprehenderit dolorum! Similique sequi quisquam obcaecati
+        doloremque quod. Molestiae nam porro libero dolore voluptas odit sunt
+        quas eos!
+      </div>
+    </section>
+  </body>
+</html>

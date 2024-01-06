@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      .content {
+        height: 770px;
+        width: 770px;
+        background-color: rgb(228, 158, 158);
+        color: aliceblue;
+        
+        margin: 10px;
+        border: 5px seagreen;
+        border-style: dashed groove dotted solid;
+        border-radius: 10px;
+      }
+      .box2 {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: aqua;
+        border: 2px solid rebeccapurple;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        ipsum! Hic placeat quis aliquam in veritatis. Sequi rerum facilis
+        doloremque dolores necessitatibus facere enim omnis unde veritatis
+        reiciendis. Ducimus, quia!
+
+        <div class="box2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          incidunt quas perspiciatis corporis reprehenderit beatae natus amet
+          aliquam ipsam eum, ut labore eius soluta hic exercitationem ipsa sequi
+          aspernatur unde!
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
